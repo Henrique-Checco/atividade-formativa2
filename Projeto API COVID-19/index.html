@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/icon" href="img/download.png" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title>Projeto API COVID-19</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo-branco-senai.png" />
+        <h1>Projeto API COVID-19</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="sobre.html">SOBRE</a>
+        <a href="equipe.html">EQUIPE</a>
+    </nav>
+
+    <div id="div-erro">...</div>
+
+    <button id="btn1" onclick="carregarMapa();">Mapa</button>
+    <div id="area-mapa"></div>
+    
+    <h4 id="titulo">Dados da Covid19</h4>
+
+    <button id="btn2" onclick="carregarGrafico();">Gráfico</button>
+    <div id="graficoPizza"></div>
+    
+    
+    <div id="container">
+        <button id="btn3" onclick="carregarDados();">Tabela</button>
+        <div id="dados">
+            <table id="tabela-dados">
+                <thead>
+                    <tr>
+                        <th>Sigla</th>
+                        <th>Estado</th>
+                        <th>Casos</th>
+                        <th>Mortes</th>
+                        <th class="mandrake">Suspeitos</th>
+                        <th class="mandrake">Descartados</th>
+                    </tr>
+                </thead>
+                <tbody id="linhas"></tbody>
+            </table>
+        </div>
+
+        
+    </div>
+
+
+
+        <footer>
+            Copyright © 2023 - Covid19 Brazil API
+        </footer>
+
+</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</html>
